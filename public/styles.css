@@ -1,0 +1,13 @@
+h1 {
+  margin-bottom: 50px !important;
+}
+
+.main-title {
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
+}
+
+.words-container {
+  min-height: 100px;
+}

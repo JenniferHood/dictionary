@@ -16,7 +16,7 @@ describe('Your Personal Dictionary', :type => :feature) do
   describe('/words path') do
     it('shows the message when no words have not been stored yet')do
     expect(page).to(have_content('No words exist yet.'))
-  else
+
     it('shows a list of the stored words') do
       clink_link('Add a new word')
       fill_in('entered_word', :with => 'cat')
