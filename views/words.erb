@@ -1,0 +1,12 @@
+<h1 class="text-center">All Stored Words</h1>
+
+<% if @all_words.nil? %>
+<p class="text-danger">No words exist yet. <a href='words/new'>Click here to add a word</a></p>
+<% else %>
+<ul>
+  <% @all_words.each do |entered_word| %>
+  <li><a href="/words/<%= word.id() %>"><%= word.entered_word() %></a></li>
+  <% end %>
+</ul>
+<% end %>
+<a href='/'>Return Home</a>

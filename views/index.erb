@@ -1,0 +1,16 @@
+<h1>Your Personal Dictionary!</h1>
+
+<div class="words-container">
+  <% if @all_words.nil? %>
+  <p class="text-danger">No words exist yet.</p>
+  <% else %>
+  <ul>
+    <% @all_words.each do |word| %>
+    <li><a href="/words/<%= word.id() %>"><%= word.entered_word() %></a></li>
+    <% end %>
+  </ul>
+  <% end %>
+</div>
+<br>
+<br>
+<a href='/words/new'>Click here to a new word</a>

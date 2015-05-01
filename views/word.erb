@@ -1,0 +1,16 @@
+<h4><%= @word.entered_word %> Definitions </h4>
+
+
+<% @word.entered_word.each do |word_def| %>
+<ul>
+  <li>1st Definition: <%= definition.word_def() %></li>
+  <li>2nd Definition: <%= definition.word_def() %></li>
+  <li>3rd Definition: <%= definition.word_def() %></li>
+</ul>
+<% end %>
+
+<li>
+  <a href="/words/<%= @word.id() %>/definitions/new">
+    Please Enter A Definition <%= @word.entered_word() %>
+  </a>
+</li>
